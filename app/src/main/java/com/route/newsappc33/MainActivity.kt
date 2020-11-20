@@ -1,9 +1,9 @@
 package com.route.newsappc33
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.route.newsappc33.ui.home.HomeActivity
 import com.route.notesappc33gsun.base.BaseActivity
 
 class MainActivity : BaseActivity() {
@@ -13,7 +13,8 @@ class MainActivity : BaseActivity() {
 
         Handler()
             .postDelayed({
-                startActivity(Intent(this@MainActivity,HomeActivity::class.java))
+                startActivity(Intent(this@MainActivity,
+                    HomeActivity::class.java))
                 finish()
             },2000);
     }
